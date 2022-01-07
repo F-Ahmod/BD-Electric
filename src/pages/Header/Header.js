@@ -10,7 +10,7 @@ const {leLogout,user}=useAuth();
            <div>
             <nav className="navbar navbar-expand-lg  navbar navbar-dark bg-dark">
             <div className="container-fluid">
-              <Link className="navbar-brand" to="/home"> <img src="" alt="" srcset="" width="60" /> <span className="text-success">B</span>ike's Hub</Link>
+              <Link className="navbar-brand" to="/home"> <img src="" alt="" srcset="" width="60" /> <span className="text-success">BD</span>Electric</Link>
                       {         
                    user.email &&
                    <p style={{marginLeft:"52%"}}>
