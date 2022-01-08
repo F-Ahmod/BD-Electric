@@ -1,7 +1,7 @@
 import React from 'react';
-import img from '../../imges/888-removebg-preview.png'
-import img2 from '../../imges/999-removebg-preview.png'
-import img3 from '../../imges/555-removebg-preview.png'
+import img from '../../imges/Sumsung Galaxy A BIG.jpg'
+import img2 from '../../imges/Sumsung Galaxy m21 BIG.jpg'
+import img3 from '../../imges/Sumsung Galaxy s21 BIG.jpg'
 
 const Banner = () => {
     return (
@@ -34,7 +34,7 @@ const Banner = () => {
             <div className="col-md-6 mt-5" data-aos="fade-right">
                 
                  <h1 className="text-success mx-auto mt-5 fs-1 mt-5" data-aos="fade-up-left">Bike's Hub</h1> <br />
-                <p className="text-secondary me-5 ms-3">Bike's Hub we also have adequate knowledge about Bike Hub .If there was no Black Sabbath, I could still possibly be a morning newspaper .</p>
+                <p className="text-secondary me-5 ms-3">BD Electronics one of the largest Online Electronics Store in Bangladesh. We stock a huge selection of Electronics products from passive components right through to Drones and robots and all accessories.</p>
             </div>
         </div>
     );
