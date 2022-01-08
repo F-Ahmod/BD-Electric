@@ -7,7 +7,7 @@ import Review from './../Review/Review';
 import Pay from './../Pay/Pay';
 import MakeAdmin from './../MakeAdmin/MakeAdmin';
 import { useState } from 'react';
-import AddBike from './../../AddBike/AddBike';
+import AddProduct from './../AddProduct/AddProduct';
 import ManageOrders from './../ManageOrders/ManageOrders';
 import DasBanner from "../DasBanner/DasBanner";
 
@@ -72,8 +72,8 @@ const Dashbaord = () => {
                 
                 )}
                 {admin==='admin' && (
-                  <NavLink className="text" to={`${url}/addBike`}>
-                  <li className="menu-bar">Add New Bike</li>
+                  <NavLink className="text" to={`${url}/AddProduct`}>
+                  <li className="menu-bar">Add New Product</li>
                 </NavLink>
                 
                 )}
@@ -103,7 +103,7 @@ const Dashbaord = () => {
                 <Pay></Pay>
               </Route>
               <Route path={`${path}/addBike`}>
-               <AddBike></AddBike>
+               <AddProduct></AddProduct>
                </Route>
               <Route  path={`${path}/makeAdmin`}>
                 <MakeAdmin></MakeAdmin>

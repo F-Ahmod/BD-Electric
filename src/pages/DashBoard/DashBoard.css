@@ -1,18 +1,18 @@
 .dashboard {
     background-color:rgba(161, 150, 150, 0.158);
     height: 100vh;
-    color: white;
+    color: rgb(15, 2, 2);
     cursor: pointer;
   
   }
   .menu-bar {
     list-style: none;
     margin-top: 10px;
-    color:whitesmoke;
+    color:rgb(12, 10, 10);
     
   }
   .menu-bar:hover {
-    color: rgb(169, 173, 173);
+    color: rgb(6, 7, 7);
   }
   .text{
     text-decoration: none;

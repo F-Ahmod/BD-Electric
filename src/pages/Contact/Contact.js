@@ -11,16 +11,16 @@ const Contact = () => {
         })
       },[]);
     return (
-        <div className="row mt-5 mb-5 bg-info">
+        <div className="row mt-5 mb-5 ">
             <div className="col-md-6 " data-aos="fade-right">
                 <h2 className="text-secondary mt-3 mb-3">Please Call</h2>
-                <p className="text-light">+173894489</p>
-                <p className="text-light"> +64684748</p>
+                <p className="">+8801717918508</p>
+                <p className=""> +8801712724836</p>
             </div>
             <div className="col-md-6" data-aos="fade-left">
                 <h2 className="text-secondary mt-3 mb-3">Email </h2>
-                <p className="text-light">bike'shub@gmail.com</p>
-                <p className="text-light">bike@hub.com</p>
+                <p className="">bdelectic@gmail.com</p>
+                <p className="">bdelectics24@gmail.com</p>
                 
             </div> 
             

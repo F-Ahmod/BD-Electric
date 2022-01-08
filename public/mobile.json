@@ -1,0 +1,40 @@
+[
+    {
+        "name":"iphone XR",
+        "img":"https://i.ibb.co/1QPMGg7/11-1.jpg",
+        "about":"Apple iPhone XR mobile was launched in September 2018. The phone comes with a 6.10-inch touchscreen display with a resolution of 828x1792 pixels at a pixel.",
+        "price":"670"
+    },
+    {
+        "name":"iphone 11 pro max",
+        "img":"https://i.ibb.co/jLm3x1J/11-2.jpg",
+        "about":"Apple iPhone 11 Pro Max · Released 2019, September 20 · 226g, 8.1mm thickness · iOS 13, up to iOS 14.7 · 64GB/256GB/512GB storage.",
+        "price":"1070"
+    },
+    {
+        "name":"iphone 12 pro max",
+        "img":"https://i.ibb.co/DRxVj2V/12.png",
+        "about":"Apple iPhone 12 Pro Max · Released 2020, November 13 · 228g, 7.4mm thickness,iOS 14.1, up to iOS 14.7 · 128GB/256GB/512GB storage.if you're a content.",
+        "price":"870"
+    },
+    {
+        "name":"Sumsung Galaxy A52",
+        "img":"https://i.ibb.co/4PYxQJc/Sumsung-Galaxy-s21-BIG.jpg",
+        "about":"Samsung Galaxy A52 Summary ... The Galaxy A52 is a part fo the A series and was launched alongside the Galaxy A72. The new Galaxy A52 has a big.",
+        "price":"600"
+    },
+    {
+        "name":"Sumsung Galaxy note 20",
+        "img":"https://i.ibb.co/qgtyCmc/Sumsung-Galaxy-m21-BIG.jpg",
+        "about":"Samsung Galaxy Note 20 mobile was launched on 5th August 2020. The phone comes with a 6.70-inch touchscreen display with a resolution of 1080x2400 pixels.",
+        "price":"470"
+    },
+    {
+        "name":"Upcoming Sumsung Galaxy",
+        "img":"https://i.ibb.co/NxFnzc0/Sumsung-Galaxy-note-20.jpg",
+        "about":"Upcoming Samsung Mobiles (2021) · Samsung Galaxy M52 5G · Samsung Galaxy M62 · Samsung Galaxy A32 · Samsung Galaxy F52 5G · Samsung Galaxy F42",
+        "price":"730"
+    }
+]
+
+

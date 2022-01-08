@@ -1,12 +1,11 @@
 import './App.css';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import SingleBike from './pages/SingleBike/SingleBike';
+import SingleProduct from './pages/SingleProduct/SingleProduct';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import AuthProvider from './pages/Hooks/AuthProvaider';
-import AddBike from './AddBike/AddBike';
-import ExploreBikes from './pages/ExploreBikes/ExploreBikes';
+import Exploreproduct from './pages/Exploreproduct/Exploreproduct';
 import DashBoard from './pages/DashBoard/DashBoard';
 import MyOrder from './pages/MyOrder/MyOrder';
 import Review from './pages/Review/Review';
@@ -26,6 +25,7 @@ import Contact from './pages/Contact/Contact';
 import Footer from './pages/Footer/Footer';
 import DasBanner from './pages/DasBanner/DasBanner';
 import BannerExpro from './pages/BannerExpro/BannerExpro';
+import AddProduct from './pages/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -41,8 +41,8 @@ function App() {
         <Route path="/home">
           <Home></Home>
         </Route>
-        <PrivateRoute path="/singleBike/:id">
-          <SingleBike></SingleBike>
+        <PrivateRoute path="/singleProduct/:id">
+          <SingleProduct></SingleProduct>
         </PrivateRoute>
         <Route path="/login">
           <Login></Login>
@@ -50,11 +50,11 @@ function App() {
         <Route path="/register">
           <Register></Register>
         </Route>
-        <Route path="/addBike">
-          <AddBike></AddBike>
+        <Route path="/addProduct">
+          <AddProduct></AddProduct>
         </Route>
-        <Route  path="/exploreBikes">
-          <ExploreBikes></ExploreBikes>
+        <Route  path="/exploreProduct">
+          <Exploreproduct></Exploreproduct>
         </Route>
         <Route  path="/dashBoard">
           <DashBoard></DashBoard>

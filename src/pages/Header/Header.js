@@ -26,7 +26,7 @@ const {leLogout,user}=useAuth();
       <div className="navbar-nav">
         <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
         <Link className="nav-link active" to="/findMore">Find More</Link>
-        <Link className="nav-link active" to="/exploreBikes">Explore</Link>
+        <Link className="nav-link active" to="/exploreProduct">Explore</Link>
         
         {!user?.email ?
        <>

@@ -8,13 +8,10 @@ const Footer = () => {
             <div id="foot" className="row">
             <div className="col-md-3 mt-3 ">
                 <div style={{marginLeft:"15px"}}>
-                <h4 className="ps-3">Bike's Hub</h4>
+                <h4 className="ps-3">BD Electic</h4>
+                <p>Electrical BD" is the most Trusted Online Industrial Automation Electrical Goods, Sales, Supply and Repairs sites in Bangladesh.</p>
                 
-        <NavLink className="nav-link active fs-5 text-light "  to="/home"><small>Home</small></NavLink>
-        <Link className="nav-link fs-5 text-light" to="/exploreBikes"><small>More Bikes</small></Link>
        
-        <Link className="nav-link fs-5 text-light" to="/manageAllOrders"><small>Future Bikes</small></Link>
-      
         
                 
                 
@@ -26,8 +23,8 @@ const Footer = () => {
                 <h4>Contact Us</h4>
                 <p>
                 <li>Email:ahmod.fateh@gmail.com</li> 
-                <li>Phone: +1646524892</li> 
-                <li>Address: Bronx,0 st,Nyc,USA</li> 
+                <li>Phone: +8801717918508</li> 
+                <li>Address: Sylhet,Bangladesh</li> 
                 </p>
                 </div>
 
@@ -35,9 +32,9 @@ const Footer = () => {
             <div className="col-md-3 mt-3 ">
                 <div style={{marginLeft:"15px"}}>
                 <h4>Quality & Innonation</h4>
-                <li>High Speeds bike</li>
-                <li>Best Oil Support</li>
-                <li>Well sefe Engine</li>
+                <li>High Quality Phone</li>
+                <li>Good customer service</li>
+                <li>Cheep Price</li>
                
                 
 
@@ -57,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="footer2 " >
                 <small className="d-flex justify-content-center">  <Link className="nav-link fs-5 text-light" to="/policy"><small>Policy & policy | Terms of Services | Cookies</small></Link></small>
-                <small className="d-flex justify-content-center">© 2021 all rights reserved by <span>Bike's Hub</span> 
+                <small className="d-flex justify-content-center">© 2021 all rights reserved by <span>bd Elictic's</span> 
                </small>
             </div>
         </div>

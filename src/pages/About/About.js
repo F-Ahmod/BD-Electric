@@ -5,14 +5,14 @@ const About = () => {
         <div>
             <div>
             <div className="mt-5 mb-5">
-            <h6 className="d-flex justify-content-start ps-3 text-lsecondary">Bike's Hub</h6>
-<h6 className="d-flex justify-content-start ps-3 text-secondary">Q. How much do Cost for home delivert a bike? </h6>
+            <h6 className="d-flex justify-content-start ps-3 text-lsecondary">BD Electic</h6>
+<h6 className="d-flex justify-content-start ps-3 text-secondary">Q. How much do Cost for home delivert? </h6>
 <p className="d-flex justify-content-start ps-3 text-secondary">A. its totally free of cost</p>
 <h6 className="d-flex justify-content-start ps-3 text-secondary">Q. How does the site work? </h6>
 <p className="d-flex justify-content-start ps-3 text-secondary">A. You can browse the site or use our search engine to find your desired products. You can then add them to your shopping bag and click on place order.</p> 
 
 <h6 className="d-flex justify-content-start ps-3 text-secondary">Q. How can I contact you? </h6>
-<p className="d-flex justify-content-start ps-3 text-secondary">A. You can always call 16710 or mail us at support@Dreams food delivery.com.</p> 
+<p className="d-flex justify-content-start ps-3 text-secondary">A. You can always call 16710 or mail us at bdelectic@gmail.com.</p> 
 <h6 className="d-flex justify-content-start ps-3 text-secondary">Q. What are your delivery hours?</h6> 
 <p className="d-flex justify-content-start ps-3 text-secondary">A. We deliver from 8 am to 10 pm every day.  </p>
 <h6 className="d-flex justify-content-start ps-3 text-secondary">Q. How do I know when my order is here? </h6>

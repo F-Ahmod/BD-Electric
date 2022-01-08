@@ -13,7 +13,7 @@ const Banner2 = () => {
         <div className="containe bgtext" >
        
         <NavLink  style={{ textDecoration: 'none' }}to="/about">
-         <Button className="fs-5 fixed-bottom" variant="text">About Bikes Hub</Button>
+         <Button className="fs-5 fixed-bottom" variant="text">About BD Electronic</Button>
          </NavLink>
            
         </div>

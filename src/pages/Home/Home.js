@@ -1,9 +1,8 @@
 import React from 'react';
-import AddBikeHome from '../AddBikeHome/AddBikeHome';
+import AddProductHome from '../AddProductHome/AddProductHome';
 import Banner from '../Banner/Banner';
-
-import BestBike from './../BestBike/BestBike';
-import ExploreBike from './../ExploreBike/ExploreBike';
+import BestProduct from '../BestProduct/BestProduct';
+import Explore from '../Explore/Explore';
 import Banner2 from './../Banner2/Banner2';
 import Clint from '../Clint/Clint';
 import DReview from '../DReview/DReview';
@@ -14,12 +13,12 @@ const Home = () => {
         <div>
             
             <Banner></Banner>
-            <BestBike></BestBike>
-            <AddBikeHome></AddBikeHome>
-            <Banner2></Banner2>
-            <ExploreBike></ExploreBike>
+            <BestProduct></BestProduct>
+            <AddProductHome></AddProductHome>
+            <Explore></Explore>
             <Clint></Clint>
             <DReview></DReview>
+            <Banner2></Banner2>
             
             
            
