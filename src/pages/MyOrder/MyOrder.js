@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Table } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import useAuth from './../Hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 
 const MyOrder = () => {
@@ -80,7 +81,9 @@ const MyOrder = () => {
               <td className="">{pd.name}</td>
               <td className=""><img style={{ width: "70px", height: "60px" }} src={pd.img} alt="" /></td>
               <td className="">${pd.price}</td>
-              <button type="button" class="bg-dark text-light rounded "><i class="far fa-check-square"></i> {pd?.status}</button>
+            {pd.paid? <button type="button" class="bg-dark text-light rounded "><i class="far fa-check-square"></i> {pd?.status}</button>:
+            <Link to={`/dashBoard/product/${pd._id}`}>Pay</Link>
+            } 
               <td>
                 <button onClick={() => deleteOrder(pd._id)} type="button" class="btn btn-danger ">  <i class="fas fa-trash "></i> Delete</button>
               </td>

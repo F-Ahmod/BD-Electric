@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
@@ -20,11 +19,11 @@ const SingleProduct = () => {
     },[])
 
     const addToCard = ()=>{
-        
+      singleProduct.id=id
         singleProduct.status='panding'
         singleProduct.paid=false
         singleProduct.email=user.email
-        fetch(`http://localhost:5000/bookMobile`,{
+        fetch(`http://localhost:5000/bookBike`,{
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(singleProduct)
@@ -36,21 +35,11 @@ const SingleProduct = () => {
       })
       }
 
-    const { register, handleSubmit,reset } = useForm();
-    const onSubmit = data => {
-      // console.log(data);
-        axios.post('http://localhost:5000/mobile',data)
-        .then(res =>{
-          if(res.data.insertedId){
-              alert('added successfully');
-              reset();
-          }
-
-      })
+    const { register, handleSubmit } = useForm();
+    
 
 
-
-    };
+    
     return (
         <div className="newBg ">
            
@@ -73,7 +62,7 @@ const SingleProduct = () => {
              <div className="mt-5 mx-auto mb-2 bg-light " style={{width:"350px",height:"300px"}}>
             <h4 className="text-success">Please Confirm your order </h4>
             <div className="">
-            <form onSubmit={handleSubmit(onSubmit)} className="mt-3 ">
+            <form onSubmit={handleSubmit()} className="mt-3 ">
             <input defaultValue={user.displayName} className="w-50 mb-1 mt-3 h-3" {...register("name")} Placeholder="Name" />
             <br />
             <input  defaultValue={user.email} className="w-50 mb-1" type="text" {...register("email")} Placeholder="Email"/>

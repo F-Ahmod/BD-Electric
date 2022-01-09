@@ -53,9 +53,7 @@ const Dashbaord = () => {
                 <NavLink className="text" to={`${url}/review`}>
                   <li className="menu-bar mt-5">Review</li>
                 </NavLink>
-                <NavLink className="text" to={`${url}/pay`}>
-                  <li className="menu-bar mt-5">Payment</li>
-                </NavLink>
+               
               </div>
 
               <div className="admin-dashboard">
@@ -96,12 +94,14 @@ const Dashbaord = () => {
                 <MyOrder></MyOrder>
               </Route>
 
+              <Route path={`${path}/product/:pid`}>
+               <Pay></Pay>
+              </Route>
+
               <Route path={`${path}/review`}>
                 <Review></Review>
               </Route>
-              <Route path={`${path}/pay`}>
-                <Pay></Pay>
-              </Route>
+
               <Route path={`${path}/addBike`}>
                 <AddProduct></AddProduct>
               </Route>
