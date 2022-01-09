@@ -7,7 +7,7 @@ const AddProductHome = () => {
     const [AddProductHome, setAddProductHome] = useState([]);
 
     useEffect(() => {
-        fetch('https://young-bayou-81881.herokuapp.com/addBike')
+        fetch('http://localhost:5000/addMobile')
             .then(res => res.json())
             .then(data => setAddProductHome(data))
     }, [])

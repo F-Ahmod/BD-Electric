@@ -13,7 +13,7 @@ const Exploreproduct = () => {
 
     useEffect(()=>{
         
-        fetch('mobile.json')
+        fetch('http://localhost:5000/mobile')
         .then(res => res.json())
         .then(data => setProduct(data))
     },[])

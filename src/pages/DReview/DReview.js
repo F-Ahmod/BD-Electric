@@ -6,7 +6,7 @@ import Rating from 'react-rating';
 const DReview = () => {
     const [review, setReview] = useState([])
     useEffect(() => {
-        fetch('https://young-bayou-81881.herokuapp.com/review')
+        fetch('http://localhost:5000/review')
             .then(res => res.json())
             .then(data => setReview(data))
     }, []);

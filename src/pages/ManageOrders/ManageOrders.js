@@ -7,7 +7,7 @@ const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
   const [Status, setStatus] = useState();
   useEffect(() => {
-    fetch("https://young-bayou-81881.herokuapp.com/bookBike")
+    fetch("http://localhost:5000/manageOrder")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [Delete, Status]);
@@ -22,7 +22,7 @@ const ManageOrders = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://young-bayou-81881.herokuapp.com/bookBike/${id}`, {
+        fetch(`http://localhost:5000/manageOrder/${id}`, {
           method: "DELETE",
           headers: { "Content-type": "application/json" },
         })
@@ -44,7 +44,7 @@ const ManageOrders = () => {
     });
   };
   const approve = (id) => {
-    fetch(`https://young-bayou-81881.herokuapp.com/bookBike/${id}`, {
+    fetch(`http://localhost:5000/update/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

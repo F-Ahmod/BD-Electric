@@ -14,7 +14,7 @@ const MyOrder = () => {
   useEffect(() => {
 
 
-    fetch(`https://young-bayou-81881.herokuapp.com/orderBike/${user?.email}`)
+    fetch(`http://localhost:5000/myOrder/${user?.email}`)
 
       .then(res => res.json())
       .then(data => setMyOrder(data));
@@ -23,8 +23,8 @@ const MyOrder = () => {
 
   // delete
   const deleteOrder = id => {
-    console.log(id);
-    const url = `https://young-bayou-81881.herokuapp.com/bookBike/${id}`;
+   
+    const url = `http://localhost:5000/manageOrder/${id}`;
     fetch(url, {
       // mode: 'no-cors',
       method: 'DELETE',
@@ -66,20 +66,20 @@ const MyOrder = () => {
 
       <Table striped bordered hover>
         <thead >
-          <tr>         
-            <th className="text-light">Product Name</th>
-            <th className="text-light">Product img</th>
-            <th className="text-light">Product Price</th>
-            <th className="text-light">Product Status</th>
-            <th className="text-light">Action</th>
+          <tr>
+            <th className="">Product Name</th>
+            <th className="">Product img</th>
+            <th className="">Product Price</th>
+            <th className="">Product Status</th>
+            <th className="">Action</th>
           </tr>
         </thead>
         {myOrder?.map((pd) => (
           <tbody>
-            <tr>            
-              <td className="text-light">{pd.name}</td>
-              <td className="text-light"><img style={{ width: "70px", height: "60px" }} src={pd.img} alt="" /></td>
-              <td className="text-light">${pd.price}</td>
+            <tr>
+              <td className="">{pd.name}</td>
+              <td className=""><img style={{ width: "70px", height: "60px" }} src={pd.img} alt="" /></td>
+              <td className="">${pd.price}</td>
               <button type="button" class="bg-dark text-light rounded "><i class="far fa-check-square"></i> {pd?.status}</button>
               <td>
                 <button onClick={() => deleteOrder(pd._id)} type="button" class="btn btn-danger ">  <i class="fas fa-trash "></i> Delete</button>

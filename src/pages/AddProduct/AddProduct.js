@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 const AddProduct = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://young-bayou-81881.herokuapp.com/addBike',data)
+        axios.post('http://localhost:5000/addMobile',data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('added successfully');

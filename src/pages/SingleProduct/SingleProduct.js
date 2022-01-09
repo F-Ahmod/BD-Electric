@@ -13,7 +13,7 @@ const SingleProduct = () => {
     const {id}=useParams();
     const [singleProduct,setSingleProduct]=useState({});
         useEffect(()=>{
-        fetch(`http://localhost:5000/bike/${id}`)
+        fetch(`http://localhost:5000/mobile/${id}`)
         .then(res=>res.json())
         .then(data =>setSingleProduct(data))
        
@@ -22,21 +22,24 @@ const SingleProduct = () => {
     const addToCard = ()=>{
         
         singleProduct.status='panding'
+        singleProduct.paid=false
         singleProduct.email=user.email
-        fetch(`http://localhost:5000/bookBike`,{
+        fetch(`http://localhost:5000/bookMobile`,{
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(singleProduct)
   
       })
       .then(res => res.json())
-      .then(data=>{console.log(data)})
+      .then(data=> { 
+        alert('added successfully');
+      })
       }
 
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
       // console.log(data);
-        axios.post('http://localhost:5000/bike',data)
+        axios.post('http://localhost:5000/mobile',data)
         .then(res =>{
           if(res.data.insertedId){
               alert('added successfully');

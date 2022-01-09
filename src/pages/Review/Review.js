@@ -9,7 +9,7 @@ const Review = () => {
     const {user}=useAuth();
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://young-bayou-81881.herokuapp.com/review',data)
+        axios.post('http://localhost:5000/review',data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('added successfully');

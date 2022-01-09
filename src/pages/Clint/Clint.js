@@ -7,7 +7,7 @@ const Clint = () => {
     const [clints,setClints]=useState([])
 
     useEffect(()=>{
-        fetch('https://young-bayou-81881.herokuapp.com/clint')
+        fetch('http://localhost:5000/clint')
         .then(res => res.json())
         .then(data =>setClints(data))
     },[]);
